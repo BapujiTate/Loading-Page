@@ -1,0 +1,78 @@
+body{
+  background-color: #d4f1f9;
+  overflow-x: hidden;
+  font-family: 'Handlee', cursive;
+}
+
+.myHeader{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-weight: bolder;
+}
+
+.main{
+  width: 410px;
+  height: 410px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+.wave{
+  width: 50%;
+  height: 50%;
+  background-color: transparent;
+  border: 26px solid #A2DBFA;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  box-shadow:
+    6px 6px 18px 0 #39A2DB,
+    6px 6px 18px 0 #39A2DB inset,
+    -6px -6px 18px #3754,
+    -6px -6px 18px #3754 inset,
+    6px 6px 13px #3754 inset;
+  filter: blur(13px);
+  animation: ripple 5s infinite ease-in;
+}
+
+.wave2{
+  width: 100%;
+  height: 100%;
+}
+
+.wave3{
+  width: 150%;
+  height: 150%;
+}
+
+.wave4{
+  width: 200%;
+  height: 200%
+}
+
+@keyframes ripple {
+  0%{
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100%{
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
+  5%{
+    opacity: 1;
+  }
+}
+
+.myDiv{
+  padding: 0;
+}
+
+.myFooter{
+  text-align: center;
+  font-weight: bold;
+}
